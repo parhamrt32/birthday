@@ -1,6 +1,68 @@
-$background: red;
+$background: #ef7272;
+$frame: #ffffff;
 
+* {
+  margin: 0%;
+  padding: 0%;
+}
 .App {
-  background-color: $background;
+  .frame {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 400px;
+    min-height: 150px;
+    background-color: $frame;
+    border-radius: 2%;
+    box-shadow: 0px 0px 32px 5px rgba(0, 0, 0, 0.25);
+  }
+}
 
+.head {
+  background-color: $frame;
+  .bod {
+    position: relative;
+    background-color: $frame;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+}
+
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  bottom: 30px;
+  width: 282px;
+  height: 74px;
+  background: #ef7272;
+  box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+}
+
+.birthday_list .person {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.birthday_list > h2 {
+  background: #ef7272;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  object-fit: cover;
 }
